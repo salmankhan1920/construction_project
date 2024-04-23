@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <h2>Chat Assistant</h2>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type your message here..." autocomplete="off">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <iframe
+src="https://www.chatbase.co/chatbot-iframe/oYQja3eOH9RrokUiTi8UY"
+title="Chatbot"
+width="100%"
+style="height: 100%; min-height: 700px"
+frameborder="0"
+></iframe>
+
+
+    <style>
+     /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbot-container {
+    width: 100%;
+    max-width: 800px; /* Increased from 400px */
+    height: 80%; /* Adjusted to take more vertical space */
+    background-color: white;
+    border-radius: 10px; /* Slightly larger radius for aesthetics */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #0052cc;
+    color: white;
+    padding: 25px; /* Increased padding */
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 24px; /* Larger font size for header */
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 25px; /* Increased padding for more space */
+    overflow-y: auto;
+    background-color: #e5e5e5;
+    font-size: 16px; /* Increased font size for readability */
+}
+
+.chat-footer {
+    padding: 15px; /* Increased padding */
+    background-color: #f8f8f8;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 12px; /* Slightly thicker padding */
+    border: 2px solid #ccc;
+    border-radius: 6px; /* Slightly more rounded */
+    margin-right: 15px; /* More space between input and button */
+}
+
+.chat-footer button {
+    padding: 12px 24px; /* Larger button for easier clicking */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-footer button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .chatbot-container {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+    </style>
+</body>
+</html>
